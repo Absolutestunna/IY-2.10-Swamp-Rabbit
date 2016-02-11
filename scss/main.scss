@@ -192,13 +192,30 @@ FOOTER
 /******************************************************
 MEDIA QUERIES
 *****************************************************/
+@media (min-width: 470px) and (max-width: 767px) {
+  .header-logo {
+     margin-left: 170px;
+  }
 
+  .description-p {
+    margin-top: 40px;
+
+  }
+
+
+  .contact {
+    p {
+      margin-top: 30px;
+    }
+    .number {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .header-logo {
     margin-left: 325px;
-  }
-  .header-topic {
-
   }
   .description-p {
     margin-top: 40px;
