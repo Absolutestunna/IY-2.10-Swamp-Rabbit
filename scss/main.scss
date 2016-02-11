@@ -1,7 +1,5 @@
 @import "variables";
 
-
-
 /* Bootstrap Variables */
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
@@ -18,10 +16,6 @@ body {
 .container {
   border: 3px solid black;
 }
-/********************
-
-
-*******************/
 
 /******************************************************
 HEADER AND LOGO
@@ -32,30 +26,28 @@ HEADER AND LOGO
 /***************************
 LOGO
 ***************************/
-.header {
-  padding: 0;
-  margin: 0 auto;
-}
-.header-img{
- height: 300px;
-  width: 100%;
-  position: relative;
-}
-.header-img img {
-  width: 100%;
-  height: 100%;
 
+
+.header{
+ background-image: url("https://images.unsplash.com/23/parked-bike.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=77ba0b5fa589ee80ca20a547b103d113");
+ height: 300px;
+ background-size: cover;
+ background-position: right;
+ padding: 0;
+ margin: 0;
+ h3 {
+   text-align: center;
+   color: white;
+ }
 }
+
 .header-logo {
   width: 120px;
   height: 100px;
-  // background-color: white;
-  position: absolute;;
-   top: 80px;
-  bottom: 0;
-  left: 515px;
-  right: 0;
   border: $borders;
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 140px;
 
 }
 .header-logo img {
@@ -68,15 +60,8 @@ LOGO
 TITLE
 ***************************/
 .header-topic {
-  position: absolute;
-  top: 150px;
-  bottom: 0;
-  left: 54px;
-  right: 0;
-  color: white;
   font-size: $font-size;
 }
-
 
 /******************************************************
 DESCRIPTION
@@ -184,6 +169,7 @@ CONTACT
     text-align: center;
     font-weight: bolder;
     margin-top: 15px;
+    margin-bottom: 20px;
   }
 
 }
@@ -207,30 +193,35 @@ FOOTER
 MEDIA QUERIES
 *****************************************************/
 
-@media (min-width: 992px) and (max-width: 1500px    ){
+@media (min-width: 768px) and (max-width: 991px) {
   .header-logo {
-    position: absolute;;
-     top: 80px;
-    bottom: 0;
-    left: 400px;
-    right: 0;
-
+    margin-left: 325px;
   }
   .header-topic {
-    bottom: 0;
-    top: 170px;
-    left: 272px;
-    right: 100px;
-    color: white;
-    font-size: $font-size;
+
   }
-/********description**********/
   .description-p {
-    p{
-      font-size: 30px;
-      margin: 42px 20%;
+    margin-top: 40px;
+
+  }
+  .contact {
+    p {
+      margin-top: 30px;
+    }
+    .number {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .header-logo {
+        margin-left: 410px;
+
+  }
+
+/********description**********/
 
   /**CONTACT**/
   .contact {
@@ -253,10 +244,23 @@ MEDIA QUERIES
 }
 @media (min-width: 1200px) {
   .header-logo {
-     left: 515px;
+     margin-left: 520px;
   }
   .header-topic {
     left: 400px;
   }
 
+  .description-p {
+    p{
+      font-size: 30px;
+      margin: 42px 20%;
+    }
+  }
+
+  .contact {
+    p {
+      padding: 20px 148px;
+        }
+
+    }
  }
