@@ -1525,12 +1525,12 @@ pre {
   @media (min-width: 768px) {
     .container {
       width: 730px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 975px) {
     .container {
       width: 950px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 490px; } }
+      width: 1150px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -1870,7 +1870,7 @@ pre {
 
   .col-sm-offset-12 {
     margin-left: 100%; } }
-@media (min-width: 992px) {
+@media (min-width: 975px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
@@ -5180,7 +5180,7 @@ button.close {
 
   .modal-sm {
     width: 300px; } }
-@media (min-width: 992px) {
+@media (min-width: 975px) {
   .modal-lg {
     width: 900px; } }
 .tooltip {
@@ -5687,7 +5687,7 @@ button.close {
   .visible-xs-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 974px) {
   .visible-sm {
     display: block !important; }
 
@@ -5700,19 +5700,19 @@ button.close {
   th.visible-sm,
   td.visible-sm {
     display: table-cell !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 974px) {
   .visible-sm-block {
     display: block !important; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 974px) {
   .visible-sm-inline {
     display: inline !important; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 974px) {
   .visible-sm-inline-block {
     display: inline-block !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 975px) and (max-width: 1199px) {
   .visible-md {
     display: block !important; }
 
@@ -5725,15 +5725,15 @@ button.close {
   th.visible-md,
   td.visible-md {
     display: table-cell !important; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 975px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 975px) and (max-width: 1199px) {
   .visible-md-inline {
     display: inline !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 975px) and (max-width: 1199px) {
   .visible-md-inline-block {
     display: inline-block !important; } }
 
@@ -5765,10 +5765,10 @@ button.close {
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important; } }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 974px) {
   .hidden-sm {
     display: none !important; } }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 975px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important; } }
 @media (min-width: 1200px) {
@@ -5839,18 +5839,17 @@ LOGO
 
 .header-img img {
   width: 100%;
-  height: 100%;
-  background-color: rgba 0, 0, 0, 0.7; }
+  height: 100%; }
 
 .header-logo {
-  width: 80px;
-  height: 80px;
-  background-color: white;
+  width: 120px;
+  height: 100px;
   position: absolute;
   top: 80px;
   bottom: 0;
-  left: 189px;
-  right: 0; }
+  left: 515px;
+  right: 0;
+  border: 3px solid black; }
 
 .header-logo img {
   width: 100%;
@@ -5875,23 +5874,35 @@ DESCRIPTION
   height: 180px;
   width: 100%;
   text-align: center;
-  border-top: 2px solid black; }
+  border-top: 5px solid black; }
 
 .description-p p {
   font-size: 30px;
   margin: 10px auto; }
 
 /******************************************************
-BICYCLE SLIDES
+Carousel and BICYCLE SLIDES
 *****************************************************/
+/********************
+Carousel
+******************/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto; }
+
+/********************
+BICYCLE
+******************/
 .bicycle-slides {
   padding: 0;
-  border-top: 2px solid black; }
+  border-top: 5px solid black; }
 
 .slide1 {
   padding: 0;
   width: 100%;
-  height: 320px; }
+  height: 320px;
+  border: 3px solid black; }
   .slide1 img {
     width: 100%;
     height: 100%;
@@ -5900,7 +5911,8 @@ BICYCLE SLIDES
 .slide2 {
   padding: 0;
   width: 100%;
-  height: 320px; }
+  height: 320px;
+  border: 3px solid black; }
   .slide2 img {
     width: 100%;
     height: 100%;
@@ -5909,7 +5921,8 @@ BICYCLE SLIDES
 .slide3 {
   padding: 0;
   width: 100%;
-  height: 320px; }
+  height: 320px;
+  border: 3px solid black; }
   .slide3 img {
     width: 100%;
     height: 100%;
@@ -5918,10 +5931,12 @@ BICYCLE SLIDES
 /******************************************************
 CONTACT
 *****************************************************/
+.fourth-row {
+  border-top: 5px solid black; }
+
 .contact {
   height: 350px;
-  width: cover;
-  border-top: 2px solid black; }
+  width: cover; }
   .contact p {
     font-size: 28px;
     text-align: center;
@@ -5941,11 +5956,52 @@ CONTACT
 FOOTER
 *****************************************************/
 .swamp-footer {
-  border-top: 2px solid black;
+  border-top: 5px solid black;
   height: 80px; }
   .swamp-footer p {
     font-size: 23px;
     text-align: center;
     margin-top: 20px; }
+
+/******************************************************
+MEDIA QUERIES
+*****************************************************/
+@media (min-width: 992px) and (max-width: 1500px) {
+  .header-logo {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 400px;
+    right: 0; }
+
+  .header-topic {
+    bottom: 0;
+    top: 170px;
+    left: 272px;
+    right: 100px;
+    color: white;
+    font-size: 35px; }
+
+  /********description**********/
+  .description-p p {
+    font-size: 30px;
+    margin: 42px 20%; }
+
+  /**CONTACT**/
+  .contact p {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 148px; }
+  .contact .number {
+    margin-top: 10px; }
+  .contact .email {
+    margin-top: 30px; } }
+@media (min-width: 1200px) {
+  .header-logo {
+    left: 515px; }
+
+  .header-topic {
+    left: 400px; } }
 
 /*# sourceMappingURL=main.css.map */

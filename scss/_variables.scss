@@ -1,9 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $grid-gutter-width: 10px;
-$container-large-desktop: (480px + $grid-gutter-width);
+// $container-large-desktop: (1024px + $grid-gutter-width);
+$screen-md: (965px+$grid-gutter-width);
 
 
 $font-size: 35px;
 $imgslide-width: 320px;
-$border-top: 2px solid black;
+$borders: 3px solid black;
+$bicycle-borders: 3px solid black;
+$border-top: 5px solid black;
 $fontdescription: 28px;
